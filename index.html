@@ -2557,7 +2557,7 @@ async function runAutofill() {
 
 Upcoming fixture: HOME = "${nameA}" vs AWAY = "${nameB}".
 
-Search ESPN, Sofascore, FotMob, FBref, football-reference.com, Transfermarkt, Wikipedia, and official league tables for the current 2026/2027 season.
+Search ESPN, Sofascore, FotMob, FBref, football-reference.com, Transfermarkt, and Wikipedia.
 Return ONLY a raw JSON object — NO markdown fences, NO backticks, NO explanation.
 
 Schema:
@@ -2590,7 +2590,7 @@ RULES:
 - result field is NOT needed — it will be derived from gf/ga.
 - sot field is NOT needed in Pass 1 — omit it entirely.
 - Standing fields null for international/cup fixtures where no league table applies.
-- homeStanding & awayStanding MUST reflect the current 2026/2027 season league standings and records (Played, Won, Drawn, Lost, League Position).
+- Season record and league standing (Played, Won, Drawn, Lost, League Position) MUST reflect the current 2026/2027 season league standings and records.
 - Do NOT invent scores. If fewer than 6 matches found, include only real ones.
 - Return ONLY the raw JSON object.`;
 
